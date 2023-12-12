@@ -62,6 +62,15 @@ h1 {
 
 /* CUSTOM MADE CLASSES */
 
+.creator{
+  font-size: 15px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.523);
+  margin-top: 850px;
+  margin-right: 1350px;
+  user-select: none;
+}
+
 .highlighth2 {
   font-size: 4rem;
   color: #cd1fcd;
