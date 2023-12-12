@@ -1,6 +1,5 @@
-
 /* SPECIFIC  ATTRIBUTES E.G. body/h2 */
-*{
+* {
   margin: 0;
   box-sizing: border-box;
 }
@@ -16,15 +15,14 @@ body {
   overflow: hidden;
 }
 
-
-h2{
+h2 {
   font-size: 3rem;
   color: rgb(255, 255, 255);
   margin-bottom: 700px;
   user-select: none; /* Prevent text selection */
 }
 
-h2:hover{
+h2:hover {
   margin-bottom: 720px;
   transition: all 0.2s ease;
 }
@@ -34,7 +32,7 @@ h2:not(:hover) {
   transition: all 0.2s ease;
 }
 
-h1{
+h1 {
   color: rgb(255, 255, 255);
   font-size: 2rem;
   margin-right: 105px;
@@ -42,7 +40,7 @@ h1{
   user-select: none; /* Prevent text selection */
 }
 
-.login h1:hover{
+.login h1:hover {
   margin-bottom: 300px;
   transition: all 0.2s ease;
 }
@@ -52,8 +50,8 @@ h1{
   transition: all 0.2s ease;
 }
 
-.signUpButton:hover{
- font-size: 50px;
+.signUpButton:hover {
+  font-size: 50px;
   transition: all 0.2s ease;
 }
 
@@ -69,12 +67,11 @@ h1{
   color: #cd1fcd;
 }
 
-.highlighth1{
+.highlighth1 {
   position: absolute;
   font-size: 2.4rem;
-  color: rgb(170, 27, 170)
+  color: rgb(170, 27, 170);
 }
-
 
 .login {
   position: absolute;
@@ -92,7 +89,7 @@ h1{
   align-items: center;
 }
 
-.loginUsername{
+.loginUsername {
   position: absolute;
   color: rgb(255, 255, 255);
   background-color: rgba(46, 46, 46, 0.625);
@@ -104,7 +101,7 @@ h1{
   cursor: none;
 }
 
-.signUpUsername{
+.signUpUsername {
   position: absolute;
   color: rgb(255, 255, 255);
   background-color: rgba(46, 46, 46, 0.625);
@@ -116,7 +113,7 @@ h1{
   cursor: none;
 }
 
-.signUpPassword{
+.signUpPassword {
   position: absolute;
   color: rgb(255, 255, 255);
   background-color: rgba(46, 46, 46, 0.625);
@@ -128,8 +125,7 @@ h1{
   cursor: none;
 }
 
-
-.signUpSecondPassword{
+.signUpSecondPassword {
   position: absolute;
   color: rgb(255, 255, 255);
   background-color: rgba(46, 46, 46, 0.625);
@@ -141,7 +137,7 @@ h1{
   cursor: none;
 }
 
-.loginPassword{
+.loginPassword {
   position: absolute;
   color: rgb(255, 255, 255);
   background-color: rgba(46, 46, 46, 0.625);
@@ -153,28 +149,27 @@ h1{
   cursor: none;
 }
 
-input{
+input {
   caret-color: transparent;
 }
 
-input:hover{
+input:hover {
   cursor: pointer;
 }
-
 
 input::placeholder {
   color: #ffffff; /* Set your desired placeholder text color */
   font-size: 15px;
 }
 
-.signUpButton{
+.signUpButton {
   position: absolute;
   margin-bottom: 800px;
   margin-left: 1500px;
   cursor: pointer;
 }
 
-.loginButton{
+.loginButton {
   color: white;
   background-color: rgba(210, 26, 210, 0.537);
   border-radius: 7px;
@@ -188,7 +183,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.createButton{
+.createButton {
   color: white;
   background-color: rgba(210, 26, 210, 0.537);
   border-radius: 7px;
@@ -202,17 +197,17 @@ input::placeholder {
   cursor: pointer;
 }
 
-.createButton:hover{
+.createButton:hover {
   background-color: rgba(177, 32, 177, 0.537);
-  transition: all 0.2s ease ;
+  transition: all 0.2s ease;
 }
 
-.loginButton:hover{
+.loginButton:hover {
   background-color: rgba(177, 32, 177, 0.537);
-  transition: all 0.2s ease ;
+  transition: all 0.2s ease;
 }
 
-.homeButton{
+.homeButton {
   position: absolute;
   background-image: url("./images/home.png");
   background-size: 70px 70px;
@@ -226,17 +221,16 @@ input::placeholder {
   user-select: none; /* Prevent text selection */
 }
 
-.homeButton:hover{
+.homeButton:hover {
   transition: all 0.2s ease;
   background-size: 100px 100px;
   width: 100px;
   height: 100px;
 }
 
-.homeButton:not(hover){
+.homeButton:not(hover) {
   transition: all 0.2s ease;
   background-size: 70px 70px;
   width: 70px;
   height: 70px;
 }
-
