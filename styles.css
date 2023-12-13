@@ -1,7 +1,7 @@
 /* SPECIFIC  ATTRIBUTES E.G. body/h2 */
 * {
   margin: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,16 +9,20 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  min-width: 1590px;
+min-width: 1590px;
   margin: 0;
   background: linear-gradient(to right, rgb(0, 0, 0), #640683);
   overflow: hidden;
-}
+  }
 
+/* Welcome to Notes heading */
 h2 {
+  position: absolute;
   font-size: 3rem;
   color: rgb(255, 255, 255);
-  margin-bottom: 700px;
+  top: 10%; /* Adjust the top percentage as needed */
+  left: 50%;
+  transform: translateX(-50%);
   user-select: none; /* Prevent text selection */
 }
 
@@ -30,6 +34,7 @@ h2:hover {
 h2:not(:hover) {
   margin-top: 20px; /* Adjust the margin-top value when not hovering */
   transition: all 0.2s ease;
+  transition-delay: 0.2s;
 }
 
 h1 {
@@ -48,26 +53,29 @@ h1 {
 .login h1:not(:hover) {
   margin-top: 20px; /* Adjust the margin-top value when not hovering */
   transition: all 0.2s ease;
+  transition-delay: 0.2s;
 }
 
 .signUpButton:hover {
-  font-size: 50px;
+  font-size: 3rem;
   transition: all 0.2s ease;
 }
 
 .signUpButton:not(:hover) {
   margin-top: 20px; /* Adjust the margin-top value when not hovering */
   transition: all 0.2s ease;
+  transition-delay: 0.2s;
 }
 
 /* CUSTOM MADE CLASSES */
 
 .creator{
-  font-size: 15px;
+  font-size: 1rem;
   position: absolute;
   color: rgba(255, 255, 255, 0.523);
-  margin-top: 850px;
-  margin-right: 1350px;
+  top: 95%;
+  left: 10%;
+  transform: translateX(-50%);
   user-select: none;
 }
 
@@ -96,7 +104,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  }
 
 .loginUsername {
   position: absolute;
@@ -119,13 +127,13 @@ h1 {
   height: 40px;
   border-radius: 5px;
   border: 2px solid #cc0bee; /* Set border properties */
-  cursor: none;
+cursor: none;
 }
 
 .signUpPassword {
   position: absolute;
   color: rgb(255, 255, 255);
-  background-color: rgba(46, 46, 46, 0.625);
+background-color: rgba(46, 46, 46, 0.625);
   margin-bottom: 20px;
   width: 300px;
   height: 40px;
@@ -173,8 +181,16 @@ input::placeholder {
 
 .signUpButton {
   position: absolute;
-  margin-bottom: 800px;
-  margin-left: 1500px;
+  font-size: 2.5rem;
+  color: white;
+  background-color: rgba(210, 26, 210, 0);
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  top: 5%; /* Adjust the top percentage as needed */
+  left: 90%;
+  transform: translateX(-50%);
   cursor: pointer;
 }
 
@@ -183,7 +199,7 @@ input::placeholder {
   background-color: rgba(210, 26, 210, 0.537);
   border-radius: 7px;
   border: none;
-  font-size: 25px;
+font-size: 25px;
   font-weight: bold;
   position: absolute;
   margin-top: 260px;
@@ -224,8 +240,9 @@ input::placeholder {
   height: 70px;
   background-color: transparent;
   border: none;
-  margin-left: -1500px;
-  margin-bottom: 800px;
+  top: 5%;
+  left: 5%;
+  transform: translateX(-50%);
   cursor: pointer;
   user-select: none; /* Prevent text selection */
 }
@@ -242,4 +259,70 @@ input::placeholder {
   background-size: 70px 70px;
   width: 70px;
   height: 70px;
+  transition-delay: 0.2s;
+}
+
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 767px) {
+  /* Adjust styles for smaller screens here */
+
+  /* Container for the login section */
+  .login-container {
+    width: 80%; /* Set a different width for smaller screens */
+  }
+
+  /* Welcome to Notes heading */
+  h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .highlighth2{
+    font-size: 3rem;
+  }
+
+  /* SignUp button */
+  .signUpButton {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    top: 2%;
+    left: 85%;
+  }
+
+  .signUpButton:hover {
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .signUpButton:not(:hover) {
+    margin-top: 20px; /* Adjust the margin-top value when not hovering */
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+  }
+
+  .creator{
+    left: 15%;
+    top: 95%;
+    font-size: 0.8rem;
+  }
+
+  .homeButton{
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .homeButton:hover {
+  transition: all 0.2s ease;
+  background-size: 70px 70px;
+  width: 70px;
+  height: 70px;
+}
+
+  .homeButton:not(hover) {
+    transition: all 0.2s ease;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    transition-delay: 0.2s;
+  }
 }
