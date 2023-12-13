@@ -503,3 +503,93 @@ font-size: 25px;
     transition-delay: 0.2s;
   }
 }
+
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 375px) {
+  /* Adjust styles for smaller screens here */
+
+  /* Container for the login section */
+  .login{
+    width: 50%; /* Set a different width for smaller screens */
+    height: 50%;
+  }
+
+  .login input{
+    width: 70%;
+    height: 10%;
+  }
+
+  .login button{
+    top: 5%;
+    height: 10%;
+  }
+
+  /* Welcome to Notes heading */
+  h2 {
+    font-size: 0.5rem; /* Adjust font size for smaller screens */
+  }
+
+  h1{
+    font-size: 0.5rem;
+  }
+
+  
+  .highlighth1{
+    font-size: 1rem;
+  }
+
+  .highlighth2{
+    font-size: 1rem;
+  }
+
+  .createAccounth2{
+    width: 400px;
+    left: 60%;
+  }
+
+  /* SignUp button */
+  .signUpButton {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    top: 2%;
+    left: 85%;
+  }
+
+  .signUpButton:hover {
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .signUpButton:not(:hover) {
+    margin-top: 20px; /* Adjust the margin-top value when not hovering */
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+  }
+
+  .creator{
+    left: 15%;
+    top: 95%;
+    font-size: 0.8rem;
+  }
+
+  .homeButton{
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .homeButton:hover {
+  transition: all 0.2s ease;
+  background-size: 70px 70px;
+  width: 70px;
+  height: 70px;
+}
+
+  .homeButton:not(hover) {
+    transition: all 0.2s ease;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    transition-delay: 0.2s;
+  }
+}
