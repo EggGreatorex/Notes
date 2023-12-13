@@ -1,5 +1,6 @@
 
 
+// FUNCTIONS FOR SWITCHIG BETWEEN PAGES
 function signUpMenu() {
   // Redirect to signup.html
   window.location.href = "signup.html";
